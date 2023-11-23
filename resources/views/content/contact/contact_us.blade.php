@@ -1,0 +1,100 @@
+@extends('layouts/contentNavbarLayout')
+
+@section('title', ' Contact Us')
+
+@section('content')
+  <div class="row">
+    <!-- Basic Layout -->
+    <div class="col-xxl">
+      <div class="card mb-4">
+        @if(session('success'))
+          <div class="alert alert-success">
+            {{ session('success') }}
+          </div>
+        @endif
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h5 class="mb-0">Contact Us Settings</h5>
+        </div>
+        <div class="card-body">
+          <form action="{{ route('admin-contact-save') }}" method="POST">
+            @csrf
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <h6 class="mb-0">Section # 1</h6>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_one_title">Title</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="section_one_title" name="section_one_title" placeholder="Title" value="{{$contact->section_one_title ?? null}}" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_one_text">Text</label>
+              <div class="col-sm-10">
+                <textarea id="editor12" name="section_one_text">{{ $contact->section_one_text ?? null }}</textarea>
+              </div>
+            </div>
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <h6 class="mb-0">Section # 2</h6>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_two_title">Title</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="section_two_title" name="section_two_title" placeholder="Title" value="{{$contact->section_two_title ?? null}}"/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_two_text">Text</label>
+              <div class="col-sm-10">
+                <textarea id="editor13" name="section_two_text">{{ $contact->section_two_text ?? null}}</textarea>
+              </div>
+            </div>
+
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <h6 class="mb-0">Section # 3</h6>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_three_title">Title</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="section_three_title" name="section_three_title" placeholder="Title" value="{{$contact->section_three_title ?? null}}"/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_three_text">Text</label>
+              <div class="col-sm-10">
+                <textarea id="editor14" name="section_three_text">{{ $contact->section_three_text ?? null}}</textarea>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_three_number">Number</label>
+              <div class="col-sm-10">
+                <textarea id="editor15" name="section_three_number">{{ $contact->section_three_number ?? null}}</textarea>
+              </div>
+            </div>
+
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <h6 class="mb-0">Section # 4</h6>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_four_title">Title</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="section_four_title" name="section_four_title" placeholder="Title" value="{{$contact->section_four_title ?? null}}"/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label" for="section_four_text">Text</label>
+              <div class="col-sm-10">
+                <textarea id="editor16" name="section_four_text">{{ $contact->section_four_text ?? null}}</textarea>
+              </div>
+            </div>
+
+            <div class="row justify-content-end">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+@endsection

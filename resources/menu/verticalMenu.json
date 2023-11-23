@@ -1,0 +1,112 @@
+{
+  "menu": [
+    {
+      "url": "/admin/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "adminDashboard"
+    },
+    {
+      "menuHeader": "Pages"
+    },
+    {
+      "url": "/admin/admin_homepage",
+      "name": "Home Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-homepage"
+    },
+    {
+      "url": "/admin/admin_about_us",
+      "name": "About Us Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-about"
+    },
+    {
+      "url": "/admin/admin_contact_us",
+      "name": "Contact Us Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-contact"
+    },
+    {
+      "url": "/admin/admin_all_services",
+      "name": "Service Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-service"
+    },
+    {
+      "url": "/admin/admin_seo_services",
+      "name": "SEO Service Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-seo-service"
+    },
+    {
+      "url": "/admin/admin_smm_services",
+      "name": "SMM Service Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-smm-service"
+    },
+    {
+      "url": "/admin/admin_web_services",
+      "name": "Web Service Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-web-service"
+    },
+    {
+      "url": "/admin/admin_ppc_services",
+      "name": "Graphic Designing Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-ppc-service"
+    },
+    {
+      "url": "/admin/admin_ads_services",
+      "name": "Ads Services Page",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-ads-service"
+    },
+    {
+      "url": "/admin/admin_blogs",
+      "name": "Blogs",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-blogs"
+    },
+    {
+      "url": "/admin/admin_terms_conditions",
+      "name": "Terms&Conditions",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "admin-terms-conditions"
+    },
+    {
+      "menuHeader": "Components"
+    },
+    {
+      "url": "/admin/admin_categories",
+      "name": "Categories",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "slug": "admin-categories"
+    },
+    {
+      "url": "/admin/admin_testimonials",
+      "name": "Testimonials",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "slug": "admin-testimonial"
+    },
+    {
+      "url": "/admin/all_services",
+      "name": "Services",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "slug": "all-services"
+    },
+    {
+      "url": "/admin/admin_contact_form",
+      "name": "Contact Form",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "slug": "admin-contact-form"
+    },
+    {
+      "url": "/admin/admin_offer_form",
+      "name": "Get Offer Form",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "slug": "admin-offer-form"
+    }
+  ]
+}
